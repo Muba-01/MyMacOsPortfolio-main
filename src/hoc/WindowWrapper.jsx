@@ -79,6 +79,7 @@ const WindowWrapper = (Component, windowKey) => {
             'max-md:!fixed max-md:!top-0 max-md:!left-0 max-md:!right-auto max-md:!bottom-auto max-md:!w-screen max-md:!h-screen max-md:!max-w-none max-md:!rounded-none max-md:!translate-x-0 max-md:!translate-y-0 max-md:!shadow-none max-md:!drop-shadow-none max-md:!overflow-hidden'
         ];
         if (windowKey === 'finder') classes.push('md:!w-3xl');
+        if (windowKey === 'contact') classes.push('max-md:overflow-x-hidden! max-md:overflow-y-auto!');
         if (isMaximized) classes.push('maximized');
 
         return (

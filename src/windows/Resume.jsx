@@ -13,7 +13,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = pdfWorker;
 
 
 const Resume = () => {
-  const { windows } = useWindowStore();
+  const { windows, closeWindow } = useWindowStore();
   const [numPages, setNumPages] = useState(null);
   const [loadError, setLoadError] = useState(false);
   const [workerDisabled, setWorkerDisabled] = useState(false);
@@ -40,20 +40,34 @@ const Resume = () => {
 
   return (
   <>
-    <div id='window-header'>
-      <WindowControls target="resume" />
-      <h2>Resume.pdf</h2>
+    {isMobile ? (
+      <div id='window-header' className="max-md:mt-10 max-md:rounded-none max-md:bg-transparent max-md:border-b-0 max-md:px-4 max-md:py-3">
+        <button
+          type="button"
+          onClick={() => closeWindow('resume')}
+          className="text-blue-600 text-sm min-w-16 text-left"
+        >
+          {'< Go Back'}
+        </button>
+        <h2 className="flex-1 text-center text-black font-medium">Resume</h2>
+        <span className="min-w-16" />
+      </div>
+    ) : (
+      <div id='window-header'>
+        <WindowControls target="resume" />
+        <h2>Resume.pdf</h2>
 
-      <a href="/files/resume.pdf"
-      download
-      className="cursor-pointer"
-      title="Download Resume"
-      >
-        <Download className="icon" />
+        <a href="/files/resume.pdf"
+        download
+        className="cursor-pointer"
+        title="Download Resume"
+        >
+          <Download className="icon" />
 
-      </a>
+        </a>
 
-    </div>
+      </div>
+    )}
 
     {
       
