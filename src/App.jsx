@@ -1,6 +1,7 @@
 import gsap from 'gsap';
 import { Draggable } from 'gsap/Draggable';
 import React from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 import { Dock, Home, Navbar, Welcome } from '#components';
 import MobileBottomNav from '#components/MobileBottomNav.jsx';
@@ -29,6 +30,7 @@ const App = () => {
     <Contact />
     <Photos />
     <Home />
+    <SpeedInsights />
  </main> 
   );}; 
 
