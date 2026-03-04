@@ -385,6 +385,59 @@ const WORK_LOCATION = {
         },
       ],
     },
+
+    // ▶ Project 4
+      {
+      id: 7,
+      name: "Linux Home Server",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-10 left-80",
+      windowPosition: "top-[33vh] left-7",
+      children: [
+        {
+          id: 1,
+          name: "Linux Home Server Project.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "My Linux Home Server project is a personal server setup designed to provide a centralized hub for media streaming, file storage, and other home automation tasks.",
+            "It features a robust configuration with multiple drives for redundancy, a user-friendly interface for easy management, and seamless integration with various applications.",
+            "The server is optimized for performance and reliability, ensuring that my data is always accessible, secure and private.",
+            "It’s built using LTS 20.04, so it offers long-term support and stability for all my home server needs.",
+          ],
+        },
+        {
+          id: 2,
+          name: "linux-home-server.com",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://mubasmac.vercel.app/",
+          position: "top-10 right-20",
+        },
+        {
+          id: 4,
+          name: "Server Screenshot.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 right-80",
+          imageUrl: "/images/project-4.png",
+        },
+        {
+          id: 5,
+          name: "Design.fig",
+          icon: "/images/plain.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-60 right-20",
+          imageUrl: "/images/design11.png",
+        },
+      ],
+    },
   ],
 };
 
