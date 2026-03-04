@@ -388,7 +388,7 @@ const WORK_LOCATION = {
 
     // ▶ Project 4
       {
-      id: 7,
+      id: 8,
       name: "Linux Home Server",
       icon: "/images/folder.png",
       kind: "folder",
